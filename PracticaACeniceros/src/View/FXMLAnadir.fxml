@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="337.0" prefWidth="356.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.FXMLAnadirController">
+    <children>
+        <Button id="btVolver" fx:id="btVolver" layoutX="265.0" layoutY="292.0" onAction="#handleButtonVolver" prefHeight="29.0" prefWidth="69.0" style="-fx-background-color: #e1a244;" text="VOLVER">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+        <TextField id="textnombre" fx:id="textnombre" layoutX="97.0" layoutY="93.0" prefHeight="25.0" prefWidth="168.0" promptText="Nombre" />
+        <TextField id="texttipo" fx:id="textTipo" layoutX="104.0" layoutY="126.0" promptText="Tipo" />
+        <TextField id="textprecio" fx:id="textPrecio" layoutX="119.0" layoutY="162.0" prefHeight="25.0" prefWidth="119.0" promptText="Precio" />
+        <TextField id="listaingredientes" fx:id="textIngredientes" layoutX="95.0" layoutY="197.0" prefHeight="29.0" prefWidth="168.0" promptText="Ingredientes" />
+        <CheckBox id="checkalergenos" fx:id="textAlergenos" layoutX="141.0" layoutY="236.0" mnemonicParsing="false" text="Alérgenos" />
+        <Button id="btAnadir" fx:id="btAnadir" layoutX="178.0" layoutY="273.0" onAction="#handleButtonAnadir" style="-fx-background-color: #74eb6c;" text="AÑADIR">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Button id="btReset" fx:id="btReset" layoutX="110.0" layoutY="273.0" onAction="#handleButtonReset" prefHeight="25.0" prefWidth="53.0" style="-fx-background-color: #f4f86b;" text="RESET">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Label layoutX="100.0" layoutY="38.0" prefHeight="37.0" prefWidth="160.0" style="-fx-background-color: #e1a244; -fx-background-radius: 10; -fx-alignment: center;" text="AÑADIR PLATO" textAlignment="CENTER" textFill="#833333">
+         <font>
+            <Font name="Impact" size="18.0" />
+         </font>
+      </Label>
+      <Label id="lbAvisos" fx:id="label" layoutX="14.0" layoutY="307.0" prefHeight="17.0" prefWidth="230.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label> 
+      
+    </children>
+</AnchorPane>
